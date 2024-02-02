@@ -11,6 +11,7 @@ import {
   selectCount,
   incrementAsync,
   incrementIfOddAsync,
+  getAllPosts,
 } from "@/lib/redux";
 import styles from "./counter.module.css";
 
@@ -61,7 +62,7 @@ export const Counter = () => {
         </button>
         <button
           className={styles.button}
-          onClick={() => dispatch(incrementIfOddAsync(incrementAmount))}
+          onClick={() => dispatch(getAllPosts())}
         >
           Add If Odd
         </button>

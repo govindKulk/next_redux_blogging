@@ -11,7 +11,7 @@ import type { ReduxThunkAction } from "@/lib/redux";
 // code can then be executed and other actions can be dispatched. Thunks are
 // typically used to make async requests.
 export const incrementAsync = createAppAsyncThunk(
-  "counter/fetchIdentityCount",
+  "counter/fetchCount",
   async (amount: number) => {
     const response = await fetchIdentityCount(amount);
 
